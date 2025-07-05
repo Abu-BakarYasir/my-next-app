@@ -1,8 +1,24 @@
+/*global.css*/
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
 @import "tailwindcss";
 
 /* :root {
  
 } */
+/* styles/globals.css  (or your project’s global stylesheet) */
+/* @font-face {
+  font-family: 'Inspiration';
+  src: url('/fonts/Inspiration.woff2') format('woff2'),
+       url('/fonts/Inspiration.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+} */
+
+/* ↓ Tailwind’s directives—keep them after @font-face */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* @theme inline {
   --color-background: var(--background);
