@@ -1,0 +1,32 @@
+[
+  {
+    "icon": "/images/icon-1.png",
+    "title": "UX Driven Engineering",
+    "description": "Unlike other companies, we are a UX-first development company. Projects are driven by designers and they make sure design and experiences translate to code."
+  },
+  {
+    "icon": "/images/icon-2.png",
+    "title": "Developing Shared Understanding",
+    "description": "Unlike other companies, we are a UX-first development company. Projects are driven by designers and they make sure design and experiences translate to code."
+  },
+  {
+    "icon": "/images/icon-3.png",
+    "title": "Proven Experience and Expertise",
+    "description": "Unlike other companies, we are a UX-first development company. Projects are driven by designers and they make sure design and experiences translate to code."
+  },
+  {
+    "icon": "/images/icon-4.png",
+    "title": "Security & Intellectual Property (IP)",
+    "description": "Unlike other companies, we are a UX-first development company. Projects are driven by designers and they make sure design and experiences translate to code."
+  },
+  {
+    "icon": "/images/icon-5.png",
+    "title": "Code Reviews",
+    "description": "Unlike other companies, we are a UX-first development company. Projects are driven by designers and they make sure design and experiences translate to code."
+  },
+  {
+    "icon": "/images/icon-6.png",
+    "title": "Quality Assurance & Testing",
+    "description": "Unlike other companies, we are a UX-first development company. Projects are driven by designers and they make sure design and experiences translate to code."
+  }
+]

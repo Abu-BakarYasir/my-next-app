@@ -1,0 +1,62 @@
+[
+  {
+    "image": "/images/case-study-1.jpg",
+    "heading": "Website Design for SFFC Canada",
+    "paragraph": "Built a sleek website that reflects the mission and values before service of a single-minded purpose that sets it apart from its foundation.",
+    "extraParagraphs": [
+      "This project involved a deep dive into user experience to ensure seamless navigation.",
+      "We implemented modern design trends to enhance visual appeal.",
+      "The site now serves as a robust platform for community engagement."
+    ]
+  },
+  {
+    "image": "/images/case-study-2.jpg",
+    "heading": "Mobile App Development",
+    "paragraph": "Developed a mobile app with intuitive design and real-time data tracking for enhanced user engagement.",
+    "extraParagraphs": [
+      "The app features a customizable dashboard for user preferences.",
+      "Security measures were prioritized to protect user data.",
+      "Regular updates ensure the app remains cutting-edge."
+    ]
+  },
+  {
+    "image": "/images/case-study-3.jpg",
+    "heading": "E-Commerce Platform",
+    "paragraph": "Created an e-commerce solution with a focus on fast loading times and secure transactions.",
+    "extraParagraphs": [
+      "Integrated multiple payment gateways for convenience.",
+      "Analytics tools were added to track customer behavior.",
+      "The platform supports multi-language options for global reach."
+    ]
+  },
+  {
+    "image": "/images/case-study-4.png",
+    "heading": "Branding Strategy",
+    "paragraph": "Designed a comprehensive branding strategy that boosted company recognition.",
+    "extraParagraphs": [
+      "Conducted market research to identify target demographics.",
+      "Developed a unique logo and color scheme.",
+      "Ongoing support ensures brand consistency."
+    ]
+  },
+  {
+    "image": "/images/case-study-5.png",
+    "heading": "Content Management System",
+    "paragraph": "Implemented a CMS to streamline content updates and improve site management.",
+    "extraParagraphs": [
+      "Trained staff to utilize the new system effectively.",
+      "Added features for automated content scheduling.",
+      "Ensured compatibility with existing infrastructure."
+    ]
+  },
+  {
+    "image": "/images/case-study-6.jpg",
+    "heading": "Digital Marketing Campaign",
+    "paragraph": "Launched a digital marketing campaign that increased online presence by 40%.",
+    "extraParagraphs": [
+      "Utilized SEO techniques to improve search rankings.",
+      "Social media strategies drove significant traffic.",
+      "Analytics provided insights for future campaigns."
+    ]
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "category": "Backend",
+    "icons": [
+      {"image": "/images/node.png", "name": "Node"},
+      {"image": "/images/php.png", "name": "PHP"},
+      {"image": "/images/sql.png", "name": "SQL"},
+      {"image": "/images/java.png", "name": "Java"},
+      {"image": "/images/NETCore.png", "name": ".NET"},
+      {"image": "/images/Python.png", "name": "Python"},
+      {"image": "/images/RubyOnRails.png", "name": "Rails"},
+      {"image": "/images/Go.png", "name": "GO"},
+      {"image": "/images/mongo.png", "name": "MongoDB"}
+      
+    ]
+  },
+  {
+    "category": "Frontend",
+    "icons": [
+      {"image": "/images/react.png", "name": "React"},
+      {"image": "/images/Vuejs.png", "name": "Vuejs"},
+      {"image": "/images/Angular.png", "name": "Angular"},
+       {"image": "/images/Bootstrap.jpg", "name": "Bootstrap"},
+        {"image": "/images/Nextjs.png", "name": "Next"},
+         {"image": "/images/Svelte.png", "name": "Svelte"}
+    ]
+  },
+  {
+    "category": "Databases",
+    "icons": [
+      {"image": "/images/sql.png", "name": "MySQL"},
+      {"image": "/images/mongodb.png", "name": "MongoDB"},
+      {"image": "/images/Redis.png", "name": "MongoDB"},
+      {"image": "/images/SQLite.jpg", "name": "SQLite"},
+      {"image": "/images/postgre.png", "name": "postgre"}
+    ]
+  },
+  {
+    "category": "CMS",
+    "icons": [
+      {"image": "/images/wordpress.jpg", "name": "WordPress"},
+      {"image": "/images/Contentful.png", "name": "Drupal"},
+      {"image": "/images/Drupal.png", "name": "Drupal"},
+      {"image": "/images/Strapi.png", "name": "Drupal"},
+      {"image": "/images/Webflow.png", "name": "Drupal"}
+    ]
+  },
+  {
+    "category": "CloudTesting",
+    "icons": [
+      {"image": "/images/aws.jpg", "name": "AWS"},
+      {"image": "/images/azure.png", "name": "Azure"}
+    ]
+  },
+  {
+    "category": "DevOps",
+    "icons": [
+      {"image": "/images/docker.jpg", "name": "Docker"},
+      {"image": "/images/jenkins.png", "name": "Jenkins"}
+    ]
+  }
+]

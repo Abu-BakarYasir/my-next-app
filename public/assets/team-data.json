@@ -1,0 +1,29 @@
+[
+  {
+    "image": "/images/team-1.jpg",
+    "heading": "Build the right team to scale",
+    "paragraph": "Finding the right team isn’t easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term. In the case with freelancers.",
+    "budget": "Our delivery model helps you cut costs and deliver within budget.",
+    "quote": "Software isn’t created to experience scope to build new features.",
+    "author": "Jessica Martin",
+    "authorImage": "/images/author-1.png"
+  },
+  {
+    "image": "/images/team-2.jpg",
+    "heading": "Build the right team to scale",
+    "paragraph": "Finding the right team isn’t easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term. In the case with freelancers.",
+    "budget": "Our delivery model helps you cut costs and deliver within budget.",
+    "quote": "Software isn’t created to experience scope to build new features.",
+    "author": "Jessica Martin",
+    "authorImage": "/images/author-2.png"
+  },
+  {
+    "image": "/images/team-3.jpg",
+    "heading": "Build the right team to scale",
+    "paragraph": "Finding the right team isn’t easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term. In the case with freelancers.",
+    "budget": "Our delivery model helps you cut costs and deliver within budget.",
+    "quote": "Software isn’t created to experience scope to build new features.",
+    "author": "Jessica Martin",
+    "authorImage": "/images/author-3.png"
+  }
+]
