@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Assemble the right team",
+    "description": "We handle aspects of vetting and choosing the right team of your expertise, or desire to do."
+  },
+  {
+    "id": 2,
+    "title": "Sprint planning",
+    "description": "Sprint roadmap is a collective planning effort. Team members work to clarify items and ensure shared understanding."
+  },
+  {
+    "id": 3,
+    "title": "Tech architecture",
+    "description": "We break monolithic apps into microservices. Developing the code allows teams to move faster and more independently."
+  },
+  {
+    "id": 4,
+    "title": "Standups & weekly demos",
+    "description": "Standups, weekly demos, and reviews make sure everyone is on the same page and confirms their concerns."
+  },
+  {
+    "id": 5,
+    "title": "Code reviews",
+    "description": "Code reviews before release help detect issues like memory leaks, performance smells, and general bad signs."
+  },
+  {
+    "id": 6,
+    "title": "Iterative delivery",
+    "description": "We divide the implementation process into several checkpoints rather than a single deadline."
+  }
+]
