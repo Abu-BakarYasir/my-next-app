@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function AboutBody() {
   return (
-    <div className="px-[104px] py-[75px] flex justify-between items-center gap-[60px] font-[Inter,sans-serif]">
+    <div className="px-[104px] py-[75px] flex justify-between items-center  font-[Inter,sans-serif]">
       {/* Left Section */}
       <div className="max-w-[600px]">
         <h1 className="mb-[20px]">
@@ -19,7 +19,7 @@ function AboutBody() {
             is{' '}
           </span>
 
-          <span className="block text-[53px] leading-[71px] font-extrabold text-[#333] font-[Inter,sans-serif]">
+          <span className="block text-[45px] leading-[71px] font-extrabold text-[#333] font-[Inter,sans-serif]">
             built by great{' '}
             <span className="text-[#A259FF]">teams</span>
           </span>

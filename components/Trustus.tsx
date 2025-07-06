@@ -7,11 +7,11 @@ const TrustedSection: React.FC = () => {
       {/* Left Content */}
       <div className="flex-1 pr-[40px]">
         <p className="text-[#5F267B] font-medium mb-[10px]">—</p>
-        <h2 className="text-[24px] font-medium mb-[10px]">
+        <h2 className="text-[35px] font-medium mb-[10px]">
           Leading companies trust us <br />
           <span className="font-bold">to develop software</span>
         </h2>
-        <p className="text-[14px] text-[#555] leading-[1.6] mb-[20px]">
+        <p className="text-[18px] text-[#555] leading-[1.6] mb-[20px]">
           We{' '}
           <span className="text-[#D100E0] font-semibold">
             add development capacity
@@ -23,7 +23,7 @@ const TrustedSection: React.FC = () => {
         </p>
         <a
           href="#"
-          className="text-[14px] font-medium text-[#D100E0] no-underline inline-flex items-center gap-[6px]"
+          className="text-[16px] font-medium text-[#D100E0] no-underline inline-flex items-center gap-[6px]"
         >
           See more informations <span className="font-bold">→</span>
         </a>
