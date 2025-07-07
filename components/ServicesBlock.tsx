@@ -65,7 +65,7 @@ const ServicesBlock: React.FC = () => {
   }
 
   return (
-    <div className="bg-[#E7DAED] font-[Inter,sans-serif] py-8 sm:py-12 lg:py-16 text-center overflow-hidden">
+    <div className="bg-[#EEF6FF] font-[Inter,sans-serif] py-8 sm:py-12 lg:py-16 text-center overflow-hidden">
       <h2 className="text-lg sm:text-xl lg:text-2xl font-bold mb-6 sm:mb-8 lg:mb-12 leading-tight px-4">Services we offer</h2>
 
       <div className="relative overflow-hidden w-full px-4 sm:px-8">

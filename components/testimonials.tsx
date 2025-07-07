@@ -7,7 +7,7 @@ export default function Testimonials() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 px-4 sm:px-8 md:px-16 lg:px-24 py-8 sm:py-12 md:py-16 lg:py-20">
       <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-gray-800 mb-4 sm:mb-6 lg:mb-8 text-center leading-tight">
-        Why clients love <br className="hidden sm:block" /><span className="text-purple-600">working with us</span>
+        Why clients love <br className="hidden sm:block" /><span className="bg-gradient-to-r from-[#161490] via-[#7476ED] to-[#E56F8C] bg-clip-text text-transparent">working with us</span>
       </h2>
       <div className="relative text-center max-w-2xl mx-auto mb-6 sm:mb-8 lg:mb-12">
         <p className="text-gray-600 italic text-sm sm:text-base lg:text-lg mb-3 sm:mb-4 lg:mb-6 leading-relaxed px-4">

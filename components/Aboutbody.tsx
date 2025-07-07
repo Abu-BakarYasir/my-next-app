@@ -10,8 +10,8 @@ function AboutBody() {
             Great{' '}
           </span>
 
-          <span className="text-3xl sm:text-4xl md:text-5xl lg:text-[53px] leading-tight lg:leading-[71px] font-extrabold text-[#A259FF] font-[Inter,sans-serif]">
-            Websites{' '}
+          <span className="text-3xl sm:text-4xl md:text-5xl lg:text-[53px] leading-tight lg:leading-[71px] font-extrabold bg-gradient-to-r from-[#161490] via-[#7476ED] to-[#E56F8C] bg-clip-text text-transparent font-[Inter,sans-serif]">
+            Products{' '}
           </span>
 
           <span className="text-2xl sm:text-3xl md:text-4xl lg:text-[45px] leading-tight lg:leading-[71px] font-light text-black font-[Inter,sans-serif]">
@@ -20,7 +20,7 @@ function AboutBody() {
 
           <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-[45px] leading-tight lg:leading-[71px] font-extrabold text-[#333] font-[Inter,sans-serif]">
             built by great{' '}
-            <span className="text-[#A259FF]">teams</span>
+            <span className="bg-gradient-to-r from-[#161490] via-[#7476ED] to-[#E56F8C] bg-clip-text text-transparent">teams</span>
           </span>
         </h1>
 

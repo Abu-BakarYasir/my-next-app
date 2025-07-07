@@ -9,19 +9,40 @@ import ApproachSection from "@/components/ApproachSection";
 import TechStackSection from "@/components/TechStackSection";
 import DevelopmentProcess from "@/components/DevelopmentProcess";
 import HireSection from "@/components/HireSection";
+
 export default function Home() {
   return (
-    <div >
-      <AboutBody />
-      <ServicesBlock />
-      <Trustus />
-      <Testimonials />
-      <CaseStudies />
-      <TeamSection />
-      <ApproachSection />
-      <TechStackSection />
-      <DevelopmentProcess />
-      <HireSection />
+    <div>
+      <section id="about">
+        <AboutBody />
+      </section>
+      <section id="services">
+        <ServicesBlock />
+      </section>
+      <section id="about-us">
+        <Trustus />
+      </section>
+      <section id="testimonials">
+        <Testimonials />
+      </section>
+      <section id="case-studies">
+        <CaseStudies />
+      </section>
+      <section id="team">
+        <TeamSection />
+      </section>
+      <section id="approach">
+        <ApproachSection />
+      </section>
+      <section id="tech-stack">
+        <TechStackSection />
+      </section>
+      <section id="how-it-works">
+        <DevelopmentProcess />
+      </section>
+      <section id="hire">
+        <HireSection />
+      </section>
     </div>
   );
 }
