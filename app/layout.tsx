@@ -11,8 +11,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Full Project',
-  description: 'Next.js App with Tailwind CSS',
+  title: 'Spiral Labs - Web Development & Digital Solutions',
+  description: 'Professional web development services by Spiral Labs. We build modern, responsive websites and web applications for businesses of all sizes.',
 };
 
 export default function RootLayout({

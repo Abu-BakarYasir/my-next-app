@@ -1,32 +1,32 @@
 [
   {
     "icon": "/images/icon-1.png",
-    "title": "UX Driven Engineering",
-    "description": "Unlike other companies, we are a UX-first development company. Projects are driven by designers and they make sure design and experiences translate to code."
+    "title": "User-Centered Design",
+    "description": "We prioritize user experience in every project. Our design process focuses on creating intuitive interfaces that engage users and drive conversions."
   },
   {
     "icon": "/images/icon-2.png",
-    "title": "Developing Shared Understanding",
-    "description": "Unlike other companies, we are a UX-first development company. Projects are driven by designers and they make sure design and experiences translate to code."
+    "title": "Responsive Development",
+    "description": "Every website we build is fully responsive and optimized for all devices. We ensure consistent performance across desktop, tablet, and mobile platforms."
   },
   {
     "icon": "/images/icon-3.png",
-    "title": "Proven Experience and Expertise",
-    "description": "Unlike other companies, we are a UX-first development company. Projects are driven by designers and they make sure design and experiences translate to code."
+    "title": "Modern Technologies",
+    "description": "We use cutting-edge web technologies and frameworks to build fast, secure, and scalable applications that meet current industry standards."
   },
   {
     "icon": "/images/icon-4.png",
-    "title": "Security & Intellectual Property (IP)",
-    "description": "Unlike other companies, we are a UX-first development company. Projects are driven by designers and they make sure design and experiences translate to code."
+    "title": "Security & Performance",
+    "description": "Security and performance are built into every project from the ground up. We implement best practices to protect user data and ensure fast loading times."
   },
   {
     "icon": "/images/icon-5.png",
-    "title": "Code Reviews",
-    "description": "Unlike other companies, we are a UX-first development company. Projects are driven by designers and they make sure design and experiences translate to code."
+    "title": "Quality Assurance",
+    "description": "Comprehensive testing ensures your website works flawlessly. We test across multiple browsers, devices, and scenarios before launch."
   },
   {
     "icon": "/images/icon-6.png",
-    "title": "Quality Assurance & Testing",
-    "description": "Unlike other companies, we are a UX-first development company. Projects are driven by designers and they make sure design and experiences translate to code."
+    "title": "Ongoing Support",
+    "description": "Our relationship doesn't end at launch. We provide ongoing maintenance, updates, and support to keep your website running smoothly."
   }
 ]

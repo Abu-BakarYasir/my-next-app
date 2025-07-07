@@ -1,32 +1,32 @@
 [
   {
     "rating": 5,
-    "name": "Romeea De Silva",
-    "title": "Janet Cosmetics",
+    "name": "Sarah Johnson",
+    "title": "Marketing Director",
     "image": "/images/romeea1.jpg"
   },
   {
     "rating": 5,
-    "name": "Romeea De Silva",
-    "title": "Janet Cosmetics",
+    "name": "Michael Chen",
+    "title": "Business Owner",
     "image": "/images/romeea2.jpg"
   },
   {
     "rating": 5,
-    "name": "Imran Khan",
-    "title": "Software Engineer",
+    "name": "Emily Rodriguez",
+    "title": "E-commerce Manager",
     "image": "/images/romeea5.jpg"
   },
   {
     "rating": 5,
-    "name": "Romeea De Silva",
-    "title": "Janet Cosmetics",
+    "name": "David Thompson",
+    "title": "Startup Founder",
     "image": "/images/romeea3.jpg"
   },
   {
     "rating": 5,
-    "name": "Romeea De Silva",
-    "title": "Janet Cosmetics",
+    "name": "Lisa Park",
+    "title": "Restaurant Owner",
     "image": "/images/romeea4.jpg"
   }
 ]

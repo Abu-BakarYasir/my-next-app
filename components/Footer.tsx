@@ -4,38 +4,35 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/f
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-white px-16 py-14 text-sm text-[#5E5E5E] font-[Poppins,sans-serif]">
-      <div className="max-w-[1440px] mx-auto flex flex-col justify-between h-[496px]">
-        {/* Top Section */}
-        <div className="flex justify-between w-full">
-          {/* Column 1 */}
-          <div className="max-w-[300px] space-y-4">
-            <img src="/logo.png" alt="Logo" className="w-[120px] h-auto" />
-            <p className="text-[#5E5E5E] font-normal text-[16px] leading-[236%] tracking-normal">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    <footer className="w-full bg-white px-4 sm:px-8 md:px-16 lg:px-24 py-8 sm:py-12 lg:py-14 text-sm text-[#5E5E5E] font-[Poppins,sans-serif]">
+      <div className="max-w-[1440px] mx-auto">
+        <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-12 mb-8 lg:mb-12">
+          <div className="flex-1 max-w-[300px] space-y-3 sm:space-y-4 text-center lg:text-left">
+            <img src="/logo.png" alt="Spiral Labs Logo" className="w-[100px] sm:w-[120px] h-auto mx-auto lg:mx-0" />
+            <p className="text-[#5E5E5E] font-normal text-sm sm:text-base lg:text-[16px] leading-relaxed lg:leading-[236%] tracking-normal">
+              Spiral Labs specializes in building modern web applications and digital solutions for businesses of all sizes.
             </p>
-            <div className="flex items-center gap-4">
-              <img src="/google.png" alt="Google Review" className="w-[100px] h-auto" />
-              <img src="/score.png" alt="Score" className="w-[40px] h-auto" />
+            <div className="flex items-center gap-3 sm:gap-4 justify-center lg:justify-start">
+              <img src="/google.png" alt="Google Review" className="w-[80px] sm:w-[100px] h-auto" />
+              <img src="/score.png" alt="Score" className="w-[32px] sm:w-[40px] h-auto" />
             </div>
           </div>
 
-          {/* Column 2 */}
-          <div className="space-y-3">
-            <h4 className="text-[#2F2F2F] font-semibold text-[16px] mb-2">Links</h4>
-            <ul className="space-y-2">
+          <div className="flex-1 space-y-2 sm:space-y-3 text-center lg:text-left">
+            <h4 className="text-[#2F2F2F] font-semibold text-sm sm:text-base lg:text-[16px] mb-3 sm:mb-4">Links</h4>
+            <ul className="space-y-1 sm:space-y-2">
               {[
                 'About Us',
                 'Services',
-                'Case Studies',
+                'Portfolio',
                 'How it works',
                 'Blog',
-                'Careers',
-                'Areas We Serve',
+                'Contact',
+                'Privacy Policy',
               ].map((text, i) => (
                 <li
                   key={i}
-                  className="font-normal text-[16px] leading-[236%] tracking-normal text-[#5E5E5E]"
+                  className="font-normal text-sm sm:text-base lg:text-[16px] leading-relaxed lg:leading-[236%] tracking-normal text-[#5E5E5E] hover:text-[#D100E0] transition-colors cursor-pointer"
                 >
                   {text}
                 </li>
@@ -43,34 +40,31 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 3 */}
-          <div className="space-y-3 max-w-[300px]">
-            <h4 className="text-[#2F2F2F] font-semibold text-[16px] mb-2">Contact us</h4>
-            <p className="font-normal text-[16px] leading-[236%] tracking-normal text-[#5E5E5E]">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          <div className="flex-1 max-w-[300px] space-y-3 sm:space-y-4 text-center lg:text-left">
+            <h4 className="text-[#2F2F2F] font-semibold text-sm sm:text-base lg:text-[16px] mb-3 sm:mb-4">Contact us</h4>
+            <p className="font-normal text-sm sm:text-base lg:text-[16px] leading-relaxed lg:leading-[236%] tracking-normal text-[#5E5E5E]">
+              Ready to start your web project? Let's discuss how we can help bring your vision to life.
             </p>
-            <p className="font-normal text-[16px] leading-[236%] tracking-normal text-[#5E5E5E]">
-              +923183561921
+            <p className="font-normal text-sm sm:text-base lg:text-[16px] leading-relaxed lg:leading-[236%] tracking-normal text-[#5E5E5E]">
+              hello@spirallabs.com
             </p>
-            <div className="flex gap-3 mt-4">
+            <div className="flex gap-2 sm:gap-3 justify-center lg:justify-start mt-3 sm:mt-4">
               {[FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn].map((Icon, index) => (
                 <button
                   key={index}
-                  className="w-8 h-8 rounded-full bg-[#F7F7F7] flex items-center justify-center text-[#5E5E5E] hover:text-white hover:bg-[#D100E0] transition"
+                  className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-[#F7F7F7] flex items-center justify-center text-[#5E5E5E] hover:text-white hover:bg-[#D100E0] transition"
                 >
-                  <Icon size={14} />
+                  <Icon size={12} className="sm:w-[14px] sm:h-[14px]" />
                 </button>
               ))}
             </div>
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="w-full h-px bg-[#eee] mt-6" />
+        <div className="w-full h-px bg-[#eee] mb-4 sm:mb-6" />
 
-        {/* Bottom Section */}
-        <div className="text-center mt-4 text-[#5E5E5E] font-normal text-[16px] leading-[236%] tracking-normal">
-          © 2023 Copyright by IK Developers. All rights reserved.
+        <div className="text-center text-[#5E5E5E] font-normal text-xs sm:text-sm lg:text-[16px] leading-relaxed lg:leading-[236%] tracking-normal">
+          © 2024 Copyright by Spiral Labs. All rights reserved.
         </div>
       </div>
     </footer>

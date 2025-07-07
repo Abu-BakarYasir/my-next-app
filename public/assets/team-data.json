@@ -1,29 +1,29 @@
 [
   {
     "image": "/images/team-1.jpg",
-    "heading": "Build the right team to scale",
-    "paragraph": "Finding the right team isn’t easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term. In the case with freelancers.",
-    "budget": "Our delivery model helps you cut costs and deliver within budget.",
-    "quote": "Software isn’t created to experience scope to build new features.",
-    "author": "Jessica Martin",
+    "heading": "Expert Web Development Team",
+    "paragraph": "At Spiral Labs, we've assembled a team of skilled web developers and designers who understand modern technologies and user experience. Our team follows industry best practices and delivers high-quality solutions.",
+    "budget": "We provide transparent pricing and deliver projects on time and within budget.",
+    "quote": "Quality web development requires attention to detail and continuous innovation.",
+    "author": "Jawaad Hussain",
     "authorImage": "/images/author-1.png"
   },
   {
     "image": "/images/team-2.jpg",
-    "heading": "Build the right team to scale",
-    "paragraph": "Finding the right team isn’t easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term. In the case with freelancers.",
-    "budget": "Our delivery model helps you cut costs and deliver within budget.",
-    "quote": "Software isn’t created to experience scope to build new features.",
-    "author": "Jessica Martin",
+    "heading": "Scalable Web Solutions",
+    "paragraph": "We build websites and web applications that grow with your business. Our scalable architecture ensures your digital presence can handle increased traffic and expanding functionality requirements.",
+    "budget": "Our efficient development process helps reduce costs while maintaining quality.",
+    "quote": "Scalability should be built into every web project from the beginning.",
+    "author": "Jawaad Hussain",
     "authorImage": "/images/author-2.png"
   },
   {
     "image": "/images/team-3.jpg",
-    "heading": "Build the right team to scale",
-    "paragraph": "Finding the right team isn’t easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term. In the case with freelancers.",
-    "budget": "Our delivery model helps you cut costs and deliver within budget.",
-    "quote": "Software isn’t created to experience scope to build new features.",
-    "author": "Jessica Martin",
+    "heading": "Future-Ready Technology",
+    "paragraph": "We stay ahead of technology trends, preparing our clients for the future of web development. From AI integration to progressive web apps, we ensure your project uses cutting-edge solutions.",
+    "budget": "Investing in modern technology today saves costs and improves performance long-term.",
+    "quote": "The web is constantly evolving, and we evolve with it to serve our clients better.",
+    "author": "Jawaad Hussain",
     "authorImage": "/images/author-3.png"
   }
 ]

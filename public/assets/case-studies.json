@@ -1,62 +1,62 @@
 [
   {
     "image": "/images/case-study-1.jpg",
-    "heading": "Website Design for SFFC Canada",
-    "paragraph": "Built a sleek website that reflects the mission and values before service of a single-minded purpose that sets it apart from its foundation.",
+    "heading": "E-commerce Website for Fashion Retailer",
+    "paragraph": "Built a modern, responsive e-commerce platform that increased online sales by 150% and improved user experience.",
     "extraParagraphs": [
-      "This project involved a deep dive into user experience to ensure seamless navigation.",
-      "We implemented modern design trends to enhance visual appeal.",
-      "The site now serves as a robust platform for community engagement."
+      "Implemented secure payment processing and inventory management system.",
+      "Designed intuitive navigation and mobile-optimized checkout process.",
+      "Integrated analytics to track customer behavior and optimize conversions."
     ]
   },
   {
     "image": "/images/case-study-2.jpg",
-    "heading": "Mobile App Development",
-    "paragraph": "Developed a mobile app with intuitive design and real-time data tracking for enhanced user engagement.",
+    "heading": "Corporate Website Redesign",
+    "paragraph": "Redesigned a corporate website with modern aesthetics and improved functionality, resulting in 40% increase in lead generation.",
     "extraParagraphs": [
-      "The app features a customizable dashboard for user preferences.",
-      "Security measures were prioritized to protect user data.",
-      "Regular updates ensure the app remains cutting-edge."
+      "Created a responsive design that works seamlessly across all devices.",
+      "Implemented SEO best practices to improve search engine rankings.",
+      "Added content management system for easy updates and maintenance."
     ]
   },
   {
     "image": "/images/case-study-3.jpg",
-    "heading": "E-Commerce Platform",
-    "paragraph": "Created an e-commerce solution with a focus on fast loading times and secure transactions.",
+    "heading": "Restaurant Web Application",
+    "paragraph": "Developed a comprehensive web application for restaurant management with online ordering and reservation system.",
     "extraParagraphs": [
-      "Integrated multiple payment gateways for convenience.",
-      "Analytics tools were added to track customer behavior.",
-      "The platform supports multi-language options for global reach."
+      "Built custom online ordering system with real-time order tracking.",
+      "Integrated table reservation system with automated confirmations.",
+      "Created admin dashboard for menu management and analytics."
     ]
   },
   {
     "image": "/images/case-study-4.png",
-    "heading": "Branding Strategy",
-    "paragraph": "Designed a comprehensive branding strategy that boosted company recognition.",
+    "heading": "Healthcare Portal Development",
+    "paragraph": "Created a secure patient portal for healthcare providers with appointment scheduling and medical records access.",
     "extraParagraphs": [
-      "Conducted market research to identify target demographics.",
-      "Developed a unique logo and color scheme.",
-      "Ongoing support ensures brand consistency."
+      "Implemented HIPAA-compliant security measures for patient data protection.",
+      "Developed user-friendly interface for patients and healthcare providers.",
+      "Integrated with existing medical systems for seamless data synchronization."
     ]
   },
   {
     "image": "/images/case-study-5.png",
-    "heading": "Content Management System",
-    "paragraph": "Implemented a CMS to streamline content updates and improve site management.",
+    "heading": "Educational Platform",
+    "paragraph": "Built an interactive learning platform with course management and student progress tracking features.",
     "extraParagraphs": [
-      "Trained staff to utilize the new system effectively.",
-      "Added features for automated content scheduling.",
-      "Ensured compatibility with existing infrastructure."
+      "Created multimedia content delivery system for engaging learning experience.",
+      "Implemented student progress tracking and certificate generation.",
+      "Developed responsive design for learning on any device."
     ]
   },
   {
     "image": "/images/case-study-6.jpg",
-    "heading": "Digital Marketing Campaign",
-    "paragraph": "Launched a digital marketing campaign that increased online presence by 40%.",
+    "heading": "Real Estate Web Platform",
+    "paragraph": "Developed a comprehensive real estate platform with property listings, virtual tours, and lead management.",
     "extraParagraphs": [
-      "Utilized SEO techniques to improve search rankings.",
-      "Social media strategies drove significant traffic.",
-      "Analytics provided insights for future campaigns."
+      "Integrated property search with advanced filtering and map integration.",
+      "Created virtual tour functionality using 360-degree photography.",
+      "Built CRM system for managing leads and client communications."
     ]
   }
 ]
