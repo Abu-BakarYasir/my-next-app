@@ -4,105 +4,125 @@ import { useEffect, useRef, useState } from "react"
 
 const services = [
   {
-    title: "Web Development",
-    description: "Build responsive and modern websites that engage users and drive business growth.",
+    title: "Mobile App Development",
+    description:
+      "Create stunning mobile applications for iOS and Android platforms with cutting-edge technology.",
+    icon: "📱",
+  },
+  {
+    title: "Web Design & Development",
+    description:
+      "Build responsive and modern websites that engage users and drive business growth.",
     icon: "💻",
   },
   {
-    title: "E-commerce Solutions",
-    description: "Create powerful online stores with secure payment systems and user-friendly interfaces.",
-    icon: "🛒",
+    title: "Software Testing Service",
+    description:
+      "Comprehensive testing solutions to ensure your software is bug-free and performs optimally.",
+    icon: "🧪",
   },
   {
-    title: "Custom Web Applications",
-    description: "Develop tailored web applications to meet your specific business requirements.",
-    icon: "⚙️",
+    title: "Software Test",
+    description: "Quality assurance and testing services for reliable software delivery.",
+    icon: "🔧",
   },
   {
-    title: "UI/UX Design",
-    description: "Design beautiful and intuitive user interfaces that provide excellent user experiences.",
-    icon: "🎨",
-  },
-  {
-    title: "AI Integration",
-    description: "Integrate AI solutions to enhance your web applications and automate business processes.",
-    icon: "🤖",
+    title: "Cloud Integration",
+    description: "Seamless cloud solutions to scale your business and improve efficiency.",
+    icon: "☁",
   },
 ]
 
+const cardWidth = 301
+const gap = 20
+const totalCardWidth = cardWidth + gap
+const visibleCards = 3
+
 const ServicesBlock: React.FC = () => {
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(services.length)
   const [transitionEnabled, setTransitionEnabled] = useState(true)
   const wrapperRef = useRef<HTMLDivElement>(null)
 
-  const cardWidth = {
-    mobile: 280,
-    tablet: 301,
-    desktop: 301
-  }
-  
-  const gap = 20
-  const visibleCards = {
-    mobile: 1,
-    tablet: 2,
-    desktop: 3
-  }
+  const extendedServices = [
+    ...services.slice(-visibleCards),
+    ...services,
+    ...services.slice(0, visibleCards),
+  ]
 
   const handleDotClick = (i: number) => {
-    setCurrentIndex(i)
+    setCurrentIndex(i + services.length)
   }
 
-  const handlePrevious = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? services.length - 1 : prevIndex - 1
-    )
+  const handleTransitionEnd = () => {
+    if (currentIndex >= services.length * 2) {
+      setTransitionEnabled(false)
+      setCurrentIndex(services.length)
+    } else if (currentIndex < services.length) {
+      setTransitionEnabled(false)
+      setCurrentIndex(services.length + services.length - 1)
+    }
   }
 
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === services.length - 1 ? 0 : prevIndex + 1
-    )
-  }
+  useEffect(() => {
+    if (!transitionEnabled) {
+      const timer = setTimeout(() => {
+        setTransitionEnabled(true)
+      }, 20)
+      return () => clearTimeout(timer)
+    }
+  }, [transitionEnabled])
+
+  const translateX =
+    (wrapperRef.current?.offsetWidth || 0) / 2 -
+    (cardWidth / 2 + currentIndex * totalCardWidth)
 
   return (
-    <div className="bg-[#EEF6FF] font-[Inter,sans-serif] py-8 sm:py-12 lg:py-16 text-center overflow-hidden">
-      <h2 className="text-lg sm:text-xl lg:text-2xl font-bold mb-6 sm:mb-8 lg:mb-12 leading-tight px-4">Services we offer</h2>
+    <div className="bg-gray-50 font-[Inter,sans-serif] py-[40px] text-center overflow-hidden">
+      <h2 className="text-[20px] font-bold mb-[30px] leading-[55px]">Services we offer</h2>
 
-      <div className="relative overflow-hidden w-full px-4 sm:px-8">
-        <div className="flex gap-4 sm:gap-6 lg:gap-[20px] transition-transform duration-500 ease-in-out justify-center lg:justify-start"
-             style={{
-               transform: `translateX(-${currentIndex * (cardWidth.mobile + 16)}px)`,
-             }}>
-          {services.map((service, index) => (
+      <div className="relative overflow-hidden w-full">
+        <div
+          ref={wrapperRef}
+          className="flex gap-[20px] justify-center"
+          style={{
+            transform: `translateX(${translateX}px)`,
+            width: `${extendedServices.length * totalCardWidth}px`,
+            transition: transitionEnabled ? "transform 0.5s ease-in-out" : "none",
+          }}
+          onTransitionEnd={handleTransitionEnd}
+        >
+          {extendedServices.map((service, index) => (
             <div
               key={index}
-              className={`w-[280px] sm:w-[301px] h-auto sm:h-[215px] p-4 sm:p-6 lg:p-[20px] bg-white rounded-[10px] shadow-[0_0_10px_rgba(0,0,0,0.05)] flex-shrink-0 transition-transform duration-300 ${
+              className={`w-[301px] h-[215px] p-[20px] bg-white rounded-[10px] shadow-[0_0_10px_rgba(0,0,0,0.05)] flex-shrink-0 transition-transform duration-300 ${
                 index === currentIndex ? "border border-[#D100E0] scale-105" : ""
               }`}
             >
-              <div className="text-2xl sm:text-3xl lg:text-[30px] mb-2 sm:mb-3 lg:mb-[10px]">{service.icon}</div>
-              <h3 className="text-sm sm:text-base lg:text-[14px] font-semibold mb-2 sm:mb-3 lg:mb-[10px]">{service.title}</h3>
-              <p className="text-xs sm:text-sm lg:text-[12px] text-[#666] leading-relaxed">{service.description}</p>
+              <div className="text-[30px] mb-[10px]">{service.icon}</div>
+              <h3 className="text-[14px] font-semibold mb-[10px]">{service.title}</h3>
+              <p className="text-[12px] text-[#666] leading-relaxed">
+                {service.description}
+              </p>
             </div>
           ))}
         </div>
       </div>
 
-      <div className="mt-4 sm:mt-6 lg:mt-8 flex justify-center">
+      <div className="mt-[20px] flex justify-center">
         {services.map((_, i) => (
           <button
             key={i}
             onClick={() => handleDotClick(i)}
-            className={`w-2 h-2 sm:w-3 sm:h-3 lg:w-[10px] lg:h-[10px] rounded-full mx-1 sm:mx-2 lg:mx-[5px] border-none cursor-pointer transition-colors duration-300 ${
-              currentIndex === i ? "bg-[#D100E0]" : "bg-[#ccc]"
+            className={`w-[10px] h-[10px] rounded-full mx-[5px] border-none cursor-pointer transition-colors duration-300 ${
+              currentIndex % services.length === i ? "bg-[#D100E0]" : "bg-[#ccc]"
             }`}
             aria-label={`Go to slide ${i + 1}`}
           />
         ))}
       </div>
 
-      <div className="mt-2 sm:mt-3 lg:mt-4 text-xs sm:text-sm lg:text-[12px] text-[#666]">
-        0{currentIndex + 1} — 0{services.length}
+      <div className="mt-[10px] text-[12px] text-[#666]">
+        0{(currentIndex % services.length) + 1} — 0{services.length}
       </div>
     </div>
   )

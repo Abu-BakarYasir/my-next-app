@@ -6,7 +6,7 @@ const TrustedSection: React.FC = () => {
     <div className="flex flex-col lg:flex-row justify-between items-center px-4 sm:px-8 md:px-16 lg:px-24 py-8 sm:py-12 md:py-16 lg:py-20 gap-8 lg:gap-12 font-[Inter,sans-serif]">
       <div className="flex-1 w-full lg:pr-8">
         <p className="text-[#5F267B] font-medium mb-2 sm:mb-3 lg:mb-4">—</p>
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[35px] font-medium mb-3 sm:mb-4 lg:mb-6 leading-tight">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[35px] font-medium mb-3 sm:mb-4 lg:mb-6 leading-[55px]">
           Leading companies trust us <br className="hidden sm:block" />
           <span className="font-bold">to build their web presence</span>
         </h2>
