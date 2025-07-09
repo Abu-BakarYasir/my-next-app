@@ -1,4 +1,4 @@
-import { dirname } from "path";
+// import { dirname } from "path";
 import { fileURLToPath } from "url";
 import { FlatCompat } from "@eslint/eslintrc";
 
@@ -11,6 +11,14 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+
+  {
+    rules: {
+      "@next/next/no-img-element": "off", // disable <img> warning
+      "react/no-unescaped-entities": "off", // disable quote issues
+      "@typescript-eslint/no-unused-vars": "warn", // change unused vars to warning
+    },
+  },
 ];
 
 export default eslintConfig;

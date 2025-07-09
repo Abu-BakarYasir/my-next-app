@@ -84,7 +84,7 @@ const DevelopmentProcess = () => {
         <div className="hidden lg:block absolute top-1/2 w-full h-1 bg-red-300 rounded-full"></div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-6 relative z-10">
-          {steps.map((step, index) => (
+          {steps.map((step) => (
             <div key={step.id} className="flex flex-col items-center text-center">
               <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md border border-gray-100 w-full max-w-sm">
                 <p className="text-purple-600 font-bold text-sm sm:text-base mb-2 sm:mb-3">

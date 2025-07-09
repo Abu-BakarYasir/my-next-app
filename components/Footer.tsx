@@ -2,6 +2,9 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 
+
+
+
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -66,7 +69,7 @@ const Footer = () => {
           <div className="flex-1 max-w-[300px] space-y-3 sm:space-y-4 text-center lg:text-left">
             <h4 className="text-[#2F2F2F] font-semibold text-sm sm:text-base lg:text-[16px] mb-3 sm:mb-4">Contact us</h4>
             <p className="font-normal text-sm sm:text-base lg:text-[16px] leading-relaxed lg:leading-[236%] tracking-normal text-[#5E5E5E]">
-              Ready to start your web project? Let's discuss how we can help bring your vision to life.
+              Ready to start your web project? Let&apos;s discuss how we can help bring your vision to life.
             </p>
             <button
               onClick={() => scrollToSection('hire')}
