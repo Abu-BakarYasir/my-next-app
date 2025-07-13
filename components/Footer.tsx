@@ -38,11 +38,21 @@ const Footer = () => {
       <div className="max-w-[1440px] mx-auto">
         <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-12 mb-8 lg:mb-12">
           <div className="flex-1 max-w-[300px] space-y-3 sm:space-y-4 text-center lg:text-left">
-            <button onClick={scrollToTop} className="inline-block">
-              <img src="/logo.png" alt="Spiral Labs Logo" className="w-[100px] sm:w-[120px] h-auto mx-auto lg:mx-0 hover:opacity-80 transition-opacity" />
-            </button>
+            <button onClick={scrollToTop} className="flex items-center gap-2">
+  <div className="w-[32px] h-[32px] sm:w-[36px] sm:h-[36px] rounded-full overflow-hidden">
+    <img
+      src="/logopiral.png"
+      alt="Spiral Labs Logo"
+      className="w-full h-full object-cover hover:opacity-80 transition-opacity"
+    />
+  </div>
+  <span className="text-xl sm:text-2xl font-inspiration text-black">
+    Spiral labs
+  </span>
+</button>
+
             <p className="text-[#5E5E5E] font-normal text-sm sm:text-base lg:text-[16px] leading-relaxed lg:leading-[236%] tracking-normal">
-              Spiral Labs specializes in building modern web applications and digital solutions for businesses of all sizes.
+              Spiral Labs specializes in crafting cutting-edge web applications and AI-powered solutions tailored to businesses of all sizes.
             </p>
             <div className="flex items-center gap-3 sm:gap-4 justify-center lg:justify-start">
               <img src="/google.png" alt="Google Review" className="w-[80px] sm:w-[100px] h-auto" />
@@ -69,13 +79,13 @@ const Footer = () => {
           <div className="flex-1 max-w-[300px] space-y-3 sm:space-y-4 text-center lg:text-left">
             <h4 className="text-[#2F2F2F] font-semibold text-sm sm:text-base lg:text-[16px] mb-3 sm:mb-4">Contact us</h4>
             <p className="font-normal text-sm sm:text-base lg:text-[16px] leading-relaxed lg:leading-[236%] tracking-normal text-[#5E5E5E]">
-              Ready to start your web project? Let&apos;s discuss how we can help bring your vision to life.
+             Looking to build a powerful web app or integrate AI into your business? Spiral Labs is here to bring your ideas to life.
             </p>
             <button
               onClick={() => scrollToSection('hire')}
               className="font-normal text-sm sm:text-base lg:text-[16px] leading-relaxed lg:leading-[236%] tracking-normal text-[#5E5E5E] hover:text-[#D100E0] transition-colors cursor-pointer"
             >
-              hello@spirallabs.com
+              spirallab.official@gmail.com
             </button>
             <div className="flex gap-2 sm:gap-3 justify-center lg:justify-start mt-3 sm:mt-4">
               {[FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn].map((Icon, index) => (

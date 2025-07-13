@@ -19,11 +19,11 @@
   },
   {
     "image": "/images/team-3.jpg",
-    "heading": "Future-Ready Technology",
-    "paragraph": "We stay ahead of technology trends, preparing our clients for the future of web development. From AI integration to progressive web apps, we ensure your project uses cutting-edge solutions.",
-    "budget": "Investing in modern technology today saves costs and improves performance long-term.",
-    "quote": "The web is constantly evolving, and we evolve with it to serve our clients better.",
-    "author": "Jawaad Hussain",
-    "authorImage": "/images/author-3.png"
+   "heading": "Future-Ready AI Technology",
+   "paragraph": "We stay ahead of AI trends, preparing our clients for the future of intelligent solutions. From automation to machine learning integration, we ensure your project leverages cutting-edge AI innovations.",
+   "budget": "Investing in AI today streamlines operations, reduces long-term costs, and unlocks new growth opportunities.",
+   "quote": "AI is transforming the future — and we evolve with it to help our clients lead the change.",
+   "author": "Jawaad Hussain",
+   "authorImage": "/images/author-3.png"
   }
 ]

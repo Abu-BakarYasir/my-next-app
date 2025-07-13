@@ -2,9 +2,11 @@
 
 import Link from 'next/link';
 import React, { useState } from 'react';
+import ContactModal from './ContactModal';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -21,13 +23,14 @@ export default function Navbar() {
         {/* Left: Logo */}
         <div className="flex items-center gap-2 flex-shrink-0">
           <Link href="/" className="flex items-center gap-2">
-            <span
-              className="inline-block h-5 w-5 sm:h-6 sm:w-6 rounded-full"
-              style={{
-                background:
-                  'linear-gradient(270deg,#161490 4.55%,#7476ED 49.85%,#E56F8C 93.3%)',
-              }}
-            />
+           <div className="inline-block h-10 w-10 sm:h-10 sm:w-10 rounded-full overflow-hidden">
+  <img
+    src="/logopiral.png"
+    alt="Spiral Labs Logo"
+    className="h-full w-full object-cover"
+  />
+</div>
+
             <span className="font-inspiration text-lg sm:text-xl lg:text-[24px] font-normal text-black">
               Spiral&nbsp;Labs
             </span>
@@ -60,7 +63,7 @@ export default function Navbar() {
         {/* Right: CTA and Mobile Menu */}
         <div className="flex items-center gap-4">
           <button
-            onClick={() => scrollToSection('hire')}
+            onClick={() => setShowModal(true)}
             className="hidden md:inline-block rounded-md bg-gradient-to-r from-[#161490] via-[#7476ED] to-[#E56F8C] px-4 lg:px-6 py-2 text-xs sm:text-sm font-semibold text-white shadow-md transition hover:brightness-110"
           >
             Contact&nbsp;us
@@ -107,13 +110,19 @@ export default function Navbar() {
 
         <li className="w-full">
           <button
-            onClick={() => scrollToSection('hire')}
+            onClick={() => {
+              setShowModal(true);
+              setIsMenuOpen(false);
+            }}
             className="block w-full text-center rounded-md bg-gradient-to-r from-[#161490] via-[#7476ED] to-[#E56F8C] px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:brightness-110"
           >
             Contact&nbsp;us
           </button>
         </li>
       </ul>
+
+      {/* Modal */}
+      <ContactModal isOpen={showModal} onClose={() => setShowModal(false)} />
     </header>
   );
 }

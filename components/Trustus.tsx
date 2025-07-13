@@ -8,16 +8,15 @@ const TrustedSection: React.FC = () => {
         <p className="text-[#5F267B] font-medium mb-2 sm:mb-3 lg:mb-4">—</p>
         <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[35px] font-medium mb-3 sm:mb-4 lg:mb-6 leading-[55px]">
           Leading companies trust us <br className="hidden sm:block" />
-          <span className="font-bold">to build their web presence</span>
+<span className="font-bold">to build their web and AI-powered presence</span>
+
         </h2>
         <p className="text-sm sm:text-base lg:text-[18px] text-[#555] leading-relaxed lg:leading-[1.6] mb-4 sm:mb-6 lg:mb-8">
           We{' '}
           <span className="text-[#D100E0] font-semibold">
-            deliver exceptional web solutions
+            Deliver smart, scalable web and AI solutions
           </span>{' '}
-          to businesses of all sizes. Our expertise spans the entire development
-          lifecycle, from initial concept to deployment and maintenance. We are a 
-          web development company that guarantees quality results and innovative solutions.
+         To businesses of all sizes. Our expertise spans the entire development lifecycle — from initial concept to deployment and maintenance. We are a web and AI development company that guarantees quality results and innovative, intelligent solutions.
         </p>
         <a
           href="#"

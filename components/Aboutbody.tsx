@@ -25,8 +25,8 @@ function AboutBody() {
         </h1>
 
         <p className="text-sm sm:text-base lg:text-[18px] text-[#555] leading-relaxed lg:leading-[36px] mb-6 max-w-md mx-auto lg:mx-0">
-          We build modern web applications and digital solutions to bring 
-          your business vision to life
+          We build modern web applications and AI-powered solutions 
+          to bring your business vision to life.
         </p>
 
         <button className="bg-gradient-to-r from-[#3D63EA] to-[#5A79F2] px-6 sm:px-8 py-3 sm:py-4 rounded-[5px] text-white w-full sm:w-auto lg:w-[175px] h-auto cursor-pointer text-sm sm:text-base lg:text-[16px] font-medium shadow-[0_4px_14px_rgba(61,99,234,0.4)] transition-all duration-300 flex items-center justify-center gap-2 whitespace-nowrap mx-auto lg:mx-0">

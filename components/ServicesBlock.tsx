@@ -1,6 +1,5 @@
 "use client"
-import type React from "react"
-import { useEffect, useRef, useState } from "react"
+import React, { useEffect, useRef, useState, useLayoutEffect } from "react"
 
 const services = [
   {
@@ -22,14 +21,14 @@ const services = [
     icon: "🧪",
   },
   {
-    title: "Software Test",
-    description: "Quality assurance and testing services for reliable software delivery.",
-    icon: "🔧",
+   title: "AI-Powered Testing",
+description: "Smart, automated software testing solutions for high-performance and reliable delivery.",
+icon: "🤖",
   },
   {
-    title: "Cloud Integration",
-    description: "Seamless cloud solutions to scale your business and improve efficiency.",
-    icon: "☁",
+   title: "AI Automation",
+description: "Streamline your workflows with intelligent automation powered by AI technology.",
+icon: "⚙️",
   },
 ]
 
@@ -41,6 +40,9 @@ const visibleCards = 3
 const ServicesBlock: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(services.length)
   const [transitionEnabled, setTransitionEnabled] = useState(true)
+  const [autoScroll, setAutoScroll] = useState(true)
+  const [wrapperWidth, setWrapperWidth] = useState(0)
+
   const wrapperRef = useRef<HTMLDivElement>(null)
 
   const extendedServices = [
@@ -50,7 +52,12 @@ const ServicesBlock: React.FC = () => {
   ]
 
   const handleDotClick = (i: number) => {
+    setAutoScroll(false)
     setCurrentIndex(i + services.length)
+  }
+
+  const handleCardClick = () => {
+    setAutoScroll(false)
   }
 
   const handleTransitionEnd = () => {
@@ -72,18 +79,41 @@ const ServicesBlock: React.FC = () => {
     }
   }, [transitionEnabled])
 
+  useEffect(() => {
+    if (!autoScroll) return
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => prev + 1)
+    }, 2500)
+    return () => clearInterval(interval)
+  }, [autoScroll])
+
+  useLayoutEffect(() => {
+    if (wrapperRef.current) {
+      setWrapperWidth(wrapperRef.current.offsetWidth)
+    }
+  }, [])
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (wrapperRef.current) {
+        setWrapperWidth(wrapperRef.current.offsetWidth)
+      }
+    }
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
+
   const translateX =
-    (wrapperRef.current?.offsetWidth || 0) / 2 -
-    (cardWidth / 2 + currentIndex * totalCardWidth)
+    wrapperWidth / 2 - (cardWidth / 2 + currentIndex * totalCardWidth)
 
   return (
     <div className="bg-gray-50 font-[Inter,sans-serif] py-[40px] text-center overflow-hidden">
       <h2 className="text-[20px] font-bold mb-[30px] leading-[55px]">Services we offer</h2>
 
-      <div className="relative overflow-hidden w-full">
+      <div className="relative overflow-hidden w-full max-w-[963px] mx-auto">
         <div
           ref={wrapperRef}
-          className="flex gap-[20px] justify-center"
+          className="flex gap-[20px]"
           style={{
             transform: `translateX(${translateX}px)`,
             width: `${extendedServices.length * totalCardWidth}px`,
@@ -94,15 +124,16 @@ const ServicesBlock: React.FC = () => {
           {extendedServices.map((service, index) => (
             <div
               key={index}
-              className={`w-[301px] h-[215px] p-[20px] bg-white rounded-[10px] shadow-[0_0_10px_rgba(0,0,0,0.05)] flex-shrink-0 transition-transform duration-300 ${
-                index === currentIndex ? "border border-[#D100E0] scale-105" : ""
-              }`}
+              onClick={handleCardClick}
+              className="p-[2px] bg-gradient-to-r from-[#e56f8c] to-[#D100E0] rounded-[12px] w-[301px] h-[215px] flex-shrink-0"
             >
-              <div className="text-[30px] mb-[10px]">{service.icon}</div>
-              <h3 className="text-[14px] font-semibold mb-[10px]">{service.title}</h3>
-              <p className="text-[12px] text-[#666] leading-relaxed">
-                {service.description}
-              </p>
+              <div className="w-full h-full bg-white rounded-[10px] p-[20px] shadow-[0_0_10px_rgba(0,0,0,0.05)] transition-transform duration-300">
+                <div className="text-[30px] mb-[10px]">{service.icon}</div>
+                <h3 className="text-[14px] font-semibold mb-[10px]">{service.title}</h3>
+                <p className="text-[12px] text-[#666] leading-relaxed">
+                  {service.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
