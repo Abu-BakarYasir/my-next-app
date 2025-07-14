@@ -83,7 +83,7 @@ const ServicesBlock: React.FC = () => {
     if (!autoScroll) return
     const interval = setInterval(() => {
       setCurrentIndex((prev) => prev + 1)
-    }, 2500)
+    }, 1500)
     return () => clearInterval(interval)
   }, [autoScroll])
 

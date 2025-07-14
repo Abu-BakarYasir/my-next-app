@@ -3,8 +3,6 @@ import React from 'react';
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 
 
-
-
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -81,12 +79,15 @@ const Footer = () => {
             <p className="font-normal text-sm sm:text-base lg:text-[16px] leading-relaxed lg:leading-[236%] tracking-normal text-[#5E5E5E]">
              Looking to build a powerful web app or integrate AI into your business? Spiral Labs is here to bring your ideas to life.
             </p>
-            <button
-              onClick={() => scrollToSection('hire')}
-              className="font-normal text-sm sm:text-base lg:text-[16px] leading-relaxed lg:leading-[236%] tracking-normal text-[#5E5E5E] hover:text-[#D100E0] transition-colors cursor-pointer"
-            >
-              spirallab.official@gmail.com
-            </button>
+            <a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=spirallab.official@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="font-normal text-sm sm:text-base lg:text-[16px] leading-relaxed lg:leading-[236%] tracking-normal text-[#5E5E5E] hover:text-[#D100E0] transition-colors cursor-pointer underline"
+ >
+  spirallab.official@gmail.com
+</a>
+
             <div className="flex gap-2 sm:gap-3 justify-center lg:justify-start mt-3 sm:mt-4">
               {[FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn].map((Icon, index) => (
                 <button

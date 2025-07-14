@@ -28,6 +28,50 @@ export default function StartProjectModal({ isOpen, onClose }: StartProjectModal
 
   if (!isOpen) return null;
 
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      company: formData.get('company'),
+      project_type: formData.get('project_type'),
+      budget: formData.get('budget'),
+      message: formData.get('message'),
+    };
+
+    if (!data.name || !data.email || !data.message) {
+      alert('Please fill in your name, email, and message.');
+      return;
+    }
+
+    try {
+      const res = await fetch('/api/start-project', {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      const result = await res.json();
+
+      if (res.ok) {
+        alert('✅ Your project inquiry was sent!');
+        form.reset();
+        onClose();
+      } else {
+        alert('❌ ' + (result.error || 'Failed to send email.'));
+      }
+    } catch (err) {
+      alert('❌ Error sending request. Try again later.');
+      console.error(err);
+    }
+  };
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/10 backdrop-blur-md">
       <div
@@ -45,7 +89,7 @@ export default function StartProjectModal({ isOpen, onClose }: StartProjectModal
           Fill out the form below and we’ll get in touch with you as soon as possible.
         </p>
 
-        <form className="space-y-4">
+        <form className="space-y-4" onSubmit={handleSubmit}>
           <input
             type="text"
             name="name"
